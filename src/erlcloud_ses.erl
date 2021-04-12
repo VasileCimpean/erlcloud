@@ -926,7 +926,7 @@ decode_send_data_points(SendDataPointsDoc) ->
                          Entry)
         || Entry <- SendDataPointsDoc].
 
-
+decode_error_code("AccessDenied") -> access_denied;
 decode_error_code("IncompleteSignature") -> incomplete_signature;
 decode_error_code("SignatureDoesNotMatch") -> signature_does_not_match;
 decode_error_code("InternalFailure") -> internal_failure;
