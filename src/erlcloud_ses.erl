@@ -928,6 +928,7 @@ decode_send_data_points(SendDataPointsDoc) ->
 
 
 decode_error_code("IncompleteSignature") -> incomplete_signature;
+decode_error_code("SignatureDoesNotMatch") -> signature_does_not_match;
 decode_error_code("InternalFailure") -> internal_failure;
 decode_error_code("InvalidAction") -> invalid_action;
 decode_error_code("InvalidClientTokenId") -> invalid_client_token_id;
